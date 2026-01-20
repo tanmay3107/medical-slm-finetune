@@ -25,10 +25,10 @@ We fine-tuned **Llama-3-8B** using **QLoRA (Quantized Low-Rank Adaptation)** to 
 ```mermaid
 graph LR
     A[PubMedQA Dataset] -->|Format| B(Instruction Prompting)
-    B -->|Train| C[Unsloth Trainer (Colab T4)]
+    B -->|Train| C[Unsloth Trainer - Colab T4]
     C -->|LoRA Adapters| D[Llama-3 Base Model]
     D -->|Merge & Save| E[GGUF Format]
-    E -->|Deploy| F[LM Studio (Local Laptop)]
+    E -->|Deploy| F[LM Studio - Local Laptop]
 ```
 
 ---
